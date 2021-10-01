@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7179336733.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://tinyurl.com/iconclock" type="image/x-icon">
+    <link href="https://fonts.googleapiscom/css2?family=Barlowz@uber@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="body">   
+    <div class="header">    
+    <div class="clock"><img src="./clock.png" alt="">  <div class="clock-heading"> Clock</div></div>
+    <div class="time-container">
+         <div class="time-boxes time-line">TIME</div>
+         <div class="time-boxes">
+
+            <div id="time-main" class="time-hour">12</div>
+
+            <div id="time-sub">Hours</div>
+        </div><span style="font-size: 40px; color: #8A11BF;">:</span>
+        <div class="time-boxes">
+
+            <div id="time-main" class="time-min">45</div>
+
+            <div id="time-sub">Mins</div>
+        </div><span style="font-size: 40px; color: #8A11BF;">:</span>
+        <div class="time-boxes">
+
+            <div id="time-main" class="time-sec">20</div>
+
+            <div id="time-sub">Secs</div>
+        </div><span style="font-size: 40px; color: #8A11BF;">:</span>
+        <div class="time-boxes bg-gradient">
+            <div id="am-time">AM</div>
+         
+        </div><div class="trans-box1"></div>
+        <div class="trans-box2"></div>
+    </div>
+    </div>
+</div>
+<br><br>
+<div class="container">
+    <div class="left-conatiner-1">
+    <div class="box-1-times">   
+        <div class="wakeup-time">
+            <img class="timer-icon" src="wake_up.svg" alt="" />
+            <i class="fas fa-sun"></i> Set wake up time   
+            <select class="morning-slot srd" name="Time" id="timestamps">
+                <option value="defaultvalue" >Select Option</option>
+                <option value="6AM" >6 AM - 8 AM</option> 
+                <option value="8AM" >8 AM - 10 AM</option>                
+                <option value="10AM" >10 AM - 12 AM</option>         
+                <option value="12 PM - 1 PM">12 PM - 2 PM</option>     
+                <option value="3 PM - 4 PM">2 PM - 4 PM</option>    
+                <option value="2 PM - 3 PM">4 PM - 6 PM</option>
+                <option value="3 PM - 4 PM">6 PM - 8 PM</option>
+                <option value="8 PM - 9 PM">8 PM - 10 PM</option>
+                <option value="10 PM - 11 PM">10 PM - 12 AM</option>
+                <option value="11 PM - 12 PM">12 AM - 02 AM</option>
+                <option value="3 AM - 4 AM">2 AM - 4 AM</option>    
+                <option value="2 AM - 3 AM">6 AM - 6 AM</option>
+            </select>
+        </div>
+<div class="line-ver">
+
+</div>
+    <div class="wakeup-time">
+        <img class="timer-icon" src="lunch_time.svg" alt="" />
+            <i class="fas fa-utensils"></i> Set lunch time 
+            <select class="noon-slot" name="Time" id="timestamps">
+                <option value="defaultvalue">Select Option</option>
+                       
+                <option value="12 PM - 1 PM">12 PM - 2 PM</option>     
+                <option value="3 PM - 4 PM">2 PM - 4 PM</option>    
+                <option value="2 PM - 3 PM">4 PM - 6 PM</option>
+                <option value="3 PM - 4 PM">6 PM - 8 PM</option>
+                <option value="8 PM - 9 PM">8 PM - 10 PM</option>
+                <option value="10 PM - 11 PM">10 PM - 12 AM</option>
+                <option value="11 PM - 12 PM">12 AM - 02 AM</option>
+                <option value="3 AM - 4 AM">2 AM - 4 AM</option>    
+                <option value="2 AM - 3 AM">6 AM - 6 AM</option>
+                <option value="6AM" >6 AM - 8 AM</option> 
+                <option value="8AM" >8 AM - 10 AM</option>                
+                <option value="10AM" >10 AM - 12 AM</option>  
+            </select>
+        </div>
+<div class="line-ver">
+    
+</div>
+        <div class="wakeup-time">
+            <img class="timer-icon" src="nap_time.svg" alt="" />
+            <i class="fas fa-bed"></i> Set nap time 
+            <select class="night-slot" name="Time" id="timestamps">
+                <option value="defaultvalue" >Select Option</option> 
+                <option value="2 PM - 3 PM">4 PM - 6 PM</option>
+                <option value="3 PM - 4 PM">6 PM - 8 PM</option>
+                <option value="8 PM - 9 PM">8 PM - 10 PM</option>
+                <option value="10 PM - 11 PM">10 PM - 12 AM</option>
+                <option value="11 PM - 12 PM">12 AM - 02 AM</option>
+                <option value="3 AM - 4 AM">2 AM - 4 AM</option>    
+                <option value="2 AM - 3 AM">6 AM - 6 AM</option>
+                <option value="6AM" >6 AM - 8 AM</option> 
+                <option value="8AM" >8 AM - 10 AM</option>                
+                <option value="10AM" >10 AM - 12 AM</option>         
+                <option value="12 PM - 1 PM">12 PM - 2 PM</option>     
+                <option value="3 PM - 4 PM">2 PM - 4 PM</option>
+            </select>
+        </div>      
+
+
+    </div><br>
+    <div class="wish-heading"><div class="wish">Good Afternoon!</div> </div><br>
+
+<div class="wish-button">Party Time</div>
+</div>
+
+
+    <div class="box-2-image">
+        <div id="mssg">Let's Have Some Lunch !!</div>
+    </div>
+
+
+
+
+</div>
+</div>
+
+<div style="color: white; font-size: 5rem;" class="output"></div>
+<script src="main.js"></script>
+</body>
+</html>

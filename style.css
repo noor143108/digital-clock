@@ -1,0 +1,396 @@
+:root {
+    /* Colors: */
+    --bg-color-dark: #3D087B;
+    --light-blue: #8E53F0;
+   --light-white: #F6E2FF;
+    --light: #EDEDED;
+    --white: #FFFFFF;
+    --light-blue-primary: #8A11BF;
+    --dark-light-blue: #5F0089;
+}  
+    
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+@font-face {
+     font-family: 'Montserrat', sans-serif;
+    src: url("./fonts/BauhausHeavyBT.woff") format("woff"), url("./fonts/BauhausHeavyBT.woff2") format("woff2");
+}
+
+body{
+    background: var(--bg-color-dark) 0% 0% no-repeat padding-box;   
+    opacity: 1;
+    font-family: 'Barlow', sans-serif; 
+}
+
+.body{
+    margin: auto;
+    max-width: 1118px;
+    margin-top: 3rem;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.clock{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.clock img{
+    width: 80px;  
+}
+
+.clock-heading{
+    font-size: 3.5rem;    
+    color: var(--light-blue);
+    padding: 1rem;   
+    letter-spacing: 0px;
+    color: white;  
+    opacity: 1;
+    font-family: 'Pacifico', cursive;    
+}
+
+.time-container{
+    margin-left: 4rem;  
+    width: 536px;
+    height: 130px;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--light);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid var(--light);
+    border-radius: 10px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.time-boxes{
+    width: 80px;
+    height: 90px;
+    background-color:var(--light-white);
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#time-main{
+    font-size: 36px;
+    text-align: center;
+    color: #8A11BF;
+}
+
+#time-sub{
+    font-size: 23px;
+    text-align: center;
+    color: #5F0089;
+}
+.time-line{
+    font-size: 23px;
+    text-align: left;
+    background: none;
+    font-weight: bold;
+    color: var(--bg-color-dark);
+    display: flex;
+    align-items: center;
+}
+
+.bg-gradient{
+    background: transparent linear-gradient(161deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    font-size: 36px;
+    color: white;
+}
+
+.trans-box1{
+    width: 416px;
+    height: 140px;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0.71;
+    z-index: -1;
+    top: 3rem;
+}
+
+.trans-box2{
+    width: 379px;
+    height: 130px;    
+    background: var(--white) 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 0.22;
+    z-index: -2;
+    top: 4.3rem;
+    position: absolute;
+}
+
+
+.box-1-times{
+    width: 566px;
+    height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid var(--light);
+    margin-right: 1rem;
+    padding: 2rem;
+}
+
+
+.box-2-image{
+    width: 536px;
+    height: 500px;
+    background: #FFFFFF;    
+    border-radius: 10px;
+    border: 1px solid var(--light);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+
+
+#wake-up img{
+    width: 70%;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+#mssg{
+    font-size: 30px;
+    color: var(--light-blue);
+    text-align: left;    
+    opacity: 1;
+    padding: 1rem;
+    z-index: 1;
+    font-family: 'Pacifico', cursive;
+}
+
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    justify-content: center;    
+}
+
+
+.left-conatiner-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.wish-heading{
+    width: 566px;
+    height: 77px;
+    background: #5F0089 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    display: flex;
+    text-align: left;
+    align-items:center ;
+}
+
+.wish-heading div{
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    opacity: 1;
+    padding: 2rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.wish-button{
+    width: 299px;
+    height: 50px;
+    background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.wish-button:hover{   
+    background: transparent linear-gradient(-113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+}
+
+
+
+.wakeup-time{
+    font-size: 1.3rem;
+    color: var(--bg-color-dark);
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select{
+    width: 281px;
+    height: 45px;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--light);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid var(--light);
+    font-variant: dunge;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    color: var(--bg-color-dark);
+    font-weight: 600;
+}
+
+.line-ver{
+    height: 40px;
+    border: 1px solid #3D087B;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+
+
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 900px) {
+
+.header{
+    display: block;
+}
+body{
+    margin: 2px;
+}
+
+.container{
+    align-items: center;
+    display: block;
+}
+
+.time-container{
+    margin: auto;
+    width: 350px;
+}
+#time-main{
+    font-size: 30px;    
+}
+
+#time-sub{
+    font-size: 18px;   
+}
+.time-line{     
+    display: none;    
+}
+.bg-gradient{   
+    font-size: 30px;
+}
+
+.time-boxes{   
+    height: 80px;
+}
+
+
+.wakeup-time{
+    font-size: 1.2rem;
+}
+
+.left-conatiner-1{
+    margin: auto;
+}
+
+
+.box-1-times{   
+    margin: auto;  
+    width:350px; 
+    padding: 1rem;
+    height: fit-content;
+}
+
+select{
+    width: fit-content;
+    height: 45px;
+}
+
+.wish-heading{
+    width: 350px;
+    margin: auto;
+}
+
+
+.box-2-image{
+    width: 350px;
+    padding: 1rem;
+    height: 500px;;
+    margin: auto;
+
+}
+
+#mssg{
+    font-size: 25px;
+    padding: 0rem;
+}
+
+.wish-button{
+    width: 299px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.clock-logo{
+    margin: auto;
+}
+
+.clock-logo img{
+    width: 60px;  
+}
+
+.body{
+    margin: 0;
+}
+
+.trans-box1{
+    width: 305px;
+    height: 129px;    
+    top: 9rem;
+}
+
+.trans-box2{    
+    width: 276px;
+    height: 130px;
+    top: 9.5rem;
+}
+
+
+
+
+
+
+
+}
+
+
